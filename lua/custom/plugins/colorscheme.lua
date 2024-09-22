@@ -11,10 +11,15 @@ return {
 			-- Load the colorscheme here.
 			-- Like many other themes, this one has different styles, and you could load
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-			vim.cmd.colorscheme("tokyonight-night")
+			-- vim.cmd.colorscheme("tokyonight-night")
 
 			-- You can configure highlights by doing something like:
 			-- vim.cmd.hi 'Comment gui=none'
+		end,
+		config = function()
+			require("tokyonight").setup({
+				transparent = true,
+			})
 		end,
 	},
 	{
@@ -25,22 +30,24 @@ return {
 			-- vim.cmd.colorscheme("gruvbox")
 		end,
 	},
+	-- Lazy
 	{
-		"marko-cerovac/material.nvim",
-		priority = 1000,
-		config = function()
-			vim.g.material_style = "darker"
-		end,
+		"olimorris/onedarkpro.nvim",
+		priority = 1000, -- Ensure it loads first
 		init = function()
-			-- vim.cmd.colorscheme("material")
+			-- vim.cmd.colorscheme("onedark")
 		end,
 	},
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000,
+		"vague2k/vague.nvim",
+		config = function()
+			require("vague").setup({
+				-- optional configuration here
+				transparent = true,
+			})
+		end,
 		init = function()
-			-- vim.cmd.colorscheme("catppuccin-mocha")
+			vim.cmd.colorscheme("vague")
 		end,
 	},
 }
