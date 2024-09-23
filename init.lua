@@ -329,7 +329,6 @@ require("lazy").setup({
 				htmx = {},
 				tailwindcss = {},
 				cssls = {},
-				tsserver = {},
 				html = {},
 				julials = {},
 				zls = {},
