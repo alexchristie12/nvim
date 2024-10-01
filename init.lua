@@ -332,6 +332,7 @@ require("lazy").setup({
 				html = {},
 				julials = {},
 				zls = {},
+				taplo = {},
 
 				lua_ls = {
 					-- cmd = {...},
