@@ -206,6 +206,11 @@ require("lazy").setup({
 			vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "[S]earch [R]esume" })
 			vim.keymap.set("n", "<leader>s.", builtin.oldfiles, { desc = '[S]earch Recent Files ("." for repeat)' })
 			vim.keymap.set("n", "<leader><leader>", builtin.buffers, { desc = "[ ] Find existing buffers" })
+			vim.keymap.set("n", "<leader>lds", builtin.lsp_document_symbols, { desc = "[l]sp [d]ocument [s]ymbols" })
+			vim.keymap.set("n", "<leader>lws", builtin.lsp_workspace_symbols, { desc = "[l]sp [w]orkspace [s]ymbols" })
+			vim.keymap.set("n", "<leader>ltd", builtin.lsp_type_definitions, { desc = "[l]sp [t]ype [d]efinitions" })
+			vim.keymap.set("n", "<leader>ltd", builtin.lsp_type_definitions, { desc = "[l]sp [t]ype [d]efinitions" })
+			vim.keymap.set("n", "<leader>lr", builtin.lsp_references, { desc = "[l]sp [r]eferences" })
 
 			-- Slightly advanced example of overriding default behavior and theme
 			vim.keymap.set("n", "<leader>/", function()
@@ -333,6 +338,7 @@ require("lazy").setup({
 				julials = {},
 				zls = {},
 				taplo = {},
+				ols = {},
 
 				lua_ls = {
 					-- cmd = {...},
