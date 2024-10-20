@@ -532,6 +532,7 @@ require("lazy").setup({
 			require("mini.ai").setup({ n_lines = 500 })
 
 			require("mini.bracketed").setup()
+			require("mini.tabline").setup()
 			-- Simple and easy statusline.
 			--  You could remove this setup call if you don't like it,
 			--  and try some other statusline plugin
